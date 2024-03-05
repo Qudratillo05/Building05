@@ -1,0 +1,423 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      list-style: none;
+      border: none;
+      overflow-x: hidden;
+}
+
+.container{
+      max-width: 1190px;
+      padding: 0 10px;
+      margin: 0 auto;
+}
+
+@font-face {
+      font-display: swap; 
+      font-family: 'Rubik';
+      font-style: normal;
+      src: url('../fonts/rubik-v28-latin-regular.woff2') format('woff2'); 
+}
+    /* rubik-500 - latin */
+@font-face {
+      font-display: swap; 
+      font-family: 'Rubik ';
+      font-style: normal;
+      font-weight: 500;
+      src: url('../fonts/rubik-v28-latin-500.woff2') format('woff2'); 
+}
+    /* rubik-700 - latin */
+@font-face {
+      font-display: swap;
+      font-family: 'Rubik';
+      font-style: normal;
+      font-weight: 700;
+      src: url('../fonts/rubik-v28-latin-700.woff2') format('woff2'); 
+}
+.nav{
+      padding: 7px 0 0 0;
+}
+.nav__content,.nav__content-right{
+      display: flex;
+
+      align-items: center;
+}
+.nav__content-right{
+      gap: 120px;
+}
+.nav__content-right ul{
+      display: flex;
+      align-items: center;
+      gap: 40px;
+}
+.nav__content-right ul a{
+      font-family: Rubik;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 21px;
+}
+.nima-gap{
+      display: flex;
+      gap: 20px;
+      align-items: center;
+}
+.nav__content{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+.burger{
+      display: none;
+}
+.burger svg:hover{
+      cursor: pointer;
+      fill: yellow;
+}
+.site-btn{
+      width: 96px;
+      height: 40px;
+      border-radius: 6px;
+      background-color: #19BCE4;
+      font-family: Rubik;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19px;
+      color: white;   
+      cursor: pointer;
+}
+.site-btn:hover{
+      background-color: #4cd0f1;
+}
+.site-btn:active{
+      background-color: #2d9fbb;
+}
+.home{
+      background: url('../img/png/bulin-bg.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 900px;
+}
+.center h1{
+      font-family: Rubik;
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 76px;
+      text-align: center;
+      margin-bottom: 24px;
+      padding: 185px 0 0 0;
+      color: #fff;
+}
+.center p{
+      text-align: center;
+      font-family: Rubik;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+      margin: 0 auto;
+      margin-bottom: 97px;
+      color: #fff;
+}
+.center__cards{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+.center__cards-card a{
+      display: flex;
+      align-items: center;
+      font-family: Rubik;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+      color: #555555;
+      margin-bottom: 8px;
+}
+.center__cards-card h6{
+      font-family: Rubik;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+      margin: 0 auto;
+}
+.center__cards{
+      padding: 20px;
+      background: #fff;
+}
+.center__cards-card{
+      max-width: 258px;
+      height: 80px;
+      border: 0.5px solid #19BCE4;
+}
+.center__cards-card h6{
+      padding: 0 33px 0 33px;
+}
+.center__cards-card a {
+      padding: 10px 33px 3px 33px;
+}
+.center__cards .site-btn{
+      width: 259px;
+      height: 70px;
+}
+.About{
+      padding: 120px 0 165px 0;
+}
+.About__content{
+      display: flex;
+      gap: 80px;
+      justify-content: space-between;
+}
+.About__content-left{
+      position: relative;
+}
+.About__content-left .img{
+      position: absolute;
+      top: 440px;
+      left: 320px;
+}
+.About__content-right a{
+      font-family: Rubik;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 27px;
+      color: #02012B;
+      margin-bottom: 10px;
+}
+.About__content-right h1{
+      max-width: 532px;
+      font-family: Rubik;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 61px;
+      margin-bottom: 24px;
+}
+.About__content-right p{
+      max-width: 479px;
+      font-family: Rubik;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 27px;
+      color: #555555;
+      margin-bottom: 40px;
+}
+.About__content-right-cards h3{
+      font-family: Rubik;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 28px;
+      padding: 24px 0 16px 0;
+}
+.About__content-right-cards p{
+      width: 229px;
+      font-family: Rubik;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+      margin-bottom: 40px;
+}
+.About__content-right-cards{
+      max-width: 540px;
+      display: flex;
+      justify-content: space-between;
+}
+.About__content-right .site-btn{
+      width: 169px;
+      height: 56px;
+}
+.Services{
+      padding: 20px  0 120px 0;
+}
+.Services h1{
+      font-family: Rubik;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 61px;
+      color: #222222;
+      margin-bottom: 68px;
+}
+.Services__content{
+      display: flex;
+      justify-content: space-between;
+      gap: 75px;
+}
+.Services__content-right-cards{
+      margin-bottom: 20px;
+      max-width: 541px;
+      height: 118px;
+}
+.Services__content-right-card{
+      display: flex;
+      gap: 28px;
+      align-items: center;
+}
+.right-card-right h3{
+      font-family: Rubik;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 24px;
+      color: #222222;
+      margin-bottom: 6px;
+}
+.right-card-right p{
+      max-width: 360px;
+      font-family: Rubik;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      color: #555555;
+}
+.Properties__content{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 150px;
+}
+.Properties__content-left h1{
+      font-family: Rubik;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 61px;
+      color: #222222;
+      margin-bottom: 20px;
+}
+.Properties__content-left p{
+      font-family: Rubik;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 30px;
+      color: #555555;
+      max-width: 596px;
+      margin-bottom: 56px;
+}
+.Properties__content-left .site-btn{
+      width: 190px;
+      height: 56px;
+      display: flex;
+      padding: 18px 35px 16px 35px;
+}
+
+.content__center-cards{
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+}
+.Contact{
+      background-color: #FFF8F7;
+      padding: 0 0 40px 0;
+}
+.Contact__content h1{
+      font-family: Rubik;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 65px;
+      text-align: center;
+      padding: 96px 0 0 0;
+}
+.Contact__content p{
+      font-family: Rubik;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 27px;
+      text-align: center;
+      margin-bottom: 100px;
+}
+.content__center-card{
+      text-align: center;
+      background: #fff;
+}
+
+.content__center-card h3{
+      font-family: Rubik;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 28px;
+      color: #222222;
+      padding: 10px 0 8px 0;
+}
+.content__center-card p{
+      font-family: Rubik;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      color: #555555;
+      padding: 10px 0 0 0;
+}
+.Center{
+      padding: 150px 0 150px 0;
+
+}
+.Center__center h1{
+      margin-bottom: 40px;
+}
+.Center__center{
+      max-width: 1152px;
+      height: 251px;
+      border-radius: 24px;
+      color: #fff;
+      text-align: center;
+      padding: 50px 0;
+      background-color: #19BCE4;
+}
+.input{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 720px;
+      height: 64px;
+      margin: 0 auto;
+      background-color: #fff;
+
+}
+input{
+      max-width: 50%;
+      height: 64px;
+      /* outline: none; */
+      font-size: 18px;
+      padding: 0 0 0 10px;
+}
+.input .site-btn{
+      width: 120px;
+      height: 48px;
+      margin: 0 10px 0 0;
+}
+footer{
+      padding: 0 0 50px 0;
+}
+.left p{
+      max-width: 329px;
+      margin-bottom: 37px;
+      margin-top: 20px;
+}
+.saytlar{
+      display: flex;
+      gap: 16px;
+}
+.footer__center{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;  
+}
+.svg{
+      display: flex;
+      flex-direction: column;
+}
+.svg h6,.ullar h6{
+      font-family: Rubik;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 28px;
+      color: #222222;   
+      margin-bottom: 24px;
+}
+
+.svg1{
+      margin-bottom: 11px;
+      display: flex;
+      gap: 10px;
+}
+
+#center__a{
+     display: inline-block;
+     margin-bottom: 8px;
+}
